@@ -1,0 +1,98 @@
+<div class="container">
+    <h3> Test </h3>
+    
+    <form>
+        <p>Personal Information</p>
+        <hr>
+        <div class="form-Group">
+
+            <label for="name" >Name</label>
+            <input required minlength="8" maxlength="20" type="text" name="name" class="form-control" ngModel > 
+           
+        </div>
+        <div class="form-Group">
+
+            <label for="username" >UserName</label>
+            <input required type="text" name="username" class="form-control"ngModel>
+        </div>
+        <div class="form-Group">
+
+            <label for="email" form="name">Email</label>
+            <input required type="text" name="email" class="form-control"ngModel>
+        </div>
+        <div class="form-Group">
+
+            <label for="" form="website">Website</label>
+            <input required type="text" name="website" class="form-control"ngModel>
+        </div>
+        <div class="form-Group">
+            <label for="phone" form="name">Phone </label>
+            <input required type="text" name="phone" class="form-control"ngModel>
+        </div>
+        <br>
+        <label >Gender: </label>
+        <div class="radio">
+            <label for= "gender" *ngFor="let gender of genders">
+                <input name="gender" [value]="gender" ngModel type="radio">{{gender}} </label>
+                </div>
+        <br>
+        <hr>
+        <p></p>
+        <label >Q1: Everything on the Internet is free to use and copy as I please because it has been made available online.: </label>
+ <div class="radio">
+            <label for= "answ" *ngFor="let answ of ans">
+                <input name="asnw" [value]="answ" ngModel type="radio">{{answ}} </label>
+        </div>
+        <br>
+        <label> Q2: I can quote a small portion of somebody else’s text to my own written work as long as I properly attribute the author. </label>
+        <div class="radio">
+            <label for= "answ" *ngFor="let answ of ans">
+                <input name="asnw" [value]="answ" ngModel type="radio">{{answ}} </label>
+        </div>
+        <br>
+        <label>Q3: I can reuse another company’s logo for my own similar product as long as I change the colors of the logo.</label>
+        <div class="radio">
+            <label for= "answ" *ngFor="let answ of ans">
+                <input name="asnw" [value]="answ" ngModel type="radio">{{answ}} </label>
+        </div>
+        <br>
+        <label>Q4: Which is the correct sequence of steps to negotiate and complete a sales contract at Our Company?</label>
+       <div class="radio">
+            <label for= "answr" *ngFor="let answr of ans2">
+             <input name="asnwr" [value]="answr" ngModel type="radio">{{answr}}  </label>
+        </div>
+        <br>
+
+        <label>Q5: Under what circumstances can you use and distribute free and open source software on behalf of our company?</label>
+        <div class="radio">
+             <label for= "answr2" *ngFor="let answr2 of ans3">
+              <input name="asnwr2" [value]="answr2" ngModel type="radio">{{answr2}}  </label>
+         </div>
+         <br>
+         <label>Q5: In which situations does our company require a confidentiality or non-disclosure agreement? Select all that apply.
+        </label>
+        <div class="radio">
+             <label for= "answr3" *ngFor="let answr3 of ans4">
+              <input name="asnwr3" [value]="answr3" ngModel type="radio">{{answr3}}  </label>
+         </div>
+         <br>
+
+
+
+        <hr>
+    
+
+        
+        <pre>
+
+
+        </pre>
+        <hr>
+      <button class="btn btn-primary" type="submit">Submit</button>
+<br>
+<br>
+<hr>
+
+</form>
+</div>
+
